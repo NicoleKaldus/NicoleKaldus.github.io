@@ -52,7 +52,7 @@ export class AIMLView {
      * @returns {Promise<HTMLDivElement>} The rendered cart element.
      */
     async renderAIML() {
-      // Create the container for the AIML content
+      // Create the container for the AIML content 
       const AIMLContentElem = document.createElement("div");
       AIMLContentElem.classList.add("project-elements");
       AIMLContentElem.classList.add("container");
