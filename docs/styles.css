@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    padding: 15px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    padding: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center; /* Center the items horizontally */
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.profile-photo {
+    width: 20%;
+    height: auto;
+    margin-right: 30px;
+}
+
+.social-link {
+    display: inline-block; /* Allow link to be styled as a block */
+    padding-right: 30px; /* Space around the icon or text */
+    color: #333; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1.2em; /* Font size for text links or icons */
+    transition: color 0.3s, transform 0.3s; /* Smooth transitions for color and scaling */
+}
+
+/* Hover effect for social links */
+.social-link:hover {
+    color: #007bff; /* Change color on hover */
+    transform: scale(1.1); /* Slightly increase the size on hover */
+}
+
+.social-link span {
+    font-size: 18px; /* Adjust size of text if using text links */
+}
+
+.text-content {
+    text-align: left;
+    display: flex;
+    flex-direction: column; /* Align text content vertically */
+    justify-content: space-between; /* Center the text content vertically within its container */
+    height: 100%;
+    max-width: 50%;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: bold;
+}
