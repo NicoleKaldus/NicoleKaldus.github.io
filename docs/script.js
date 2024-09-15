@@ -1,5 +1,7 @@
 import { HomeView } from "./homeView.js";
-import { ResumeView } from "./resumeView.js";
+import { RoboticsView } from "./roboticsView.js";
+import { GameDevView } from "./gamedevView.js";
+import { AIMLView } from "./aiml.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   /**
@@ -12,8 +14,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const viewsElm = document.getElementById("views");
     viewsElm.innerHTML = "";
     let view = null;
-    if (viewID === "resume") {
-      view = new CartView();
+    if (viewID === "robotics") {
+      view = new RoboticsView();
+    } else if (viewID === "gameDev") {
+      view = new GameDevView();
+    } else if (viewID === "aiml") {
+      view = new AIMLView();
     } else {
       view = new HomeView();
     }
@@ -26,19 +32,22 @@ document.addEventListener("DOMContentLoaded", () => {
    */
   function setLinks(links) {
     links.forEach((link) => {
-      link.addEventListener("click", async (e) => {
-        e.preventDefault();
-        const href = e.target.getAttribute("href");
-        if (href) {
-          const view = href.replace("#", "");
-          window.location.hash = view;
-          navigate(view);
+        if(link.innerHTML != "Resume"){
+            link.addEventListener("click", async (e) => {
+                e.preventDefault();
+                const href = e.target.getAttribute("href");
+                if (href) {
+                  const view = href.replace("#", "");
+                  window.location.hash = view;
+                  navigate(view);
+                }
+            });
         }
-      });
     });
   }
 
   const menu = document.getElementById("menu");
+  console.log(menu.querySelectorAll("a"))
   const menuLinks = menu.querySelectorAll("a");
   setLinks(menuLinks);
 

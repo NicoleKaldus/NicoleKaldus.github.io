@@ -81,7 +81,7 @@ class Home {
 
     const description = document.createElement("p");
     description.classList.add("description");
-    description.textContent = "I am a Masters CS student at the University of Massachusetts Amherst graduating in Fall 2025. In my graduate degree, I am focusing on robotics software engineering and AI/ML. This semester, I am focusing on creating neural networks—for generative AI and computer vision—and quantum informatics.";
+    description.textContent = "I am a Masters CS student at the University of Massachusetts Amherst graduating in Fall 2025. In my graduate degree, I am focusing on robotics software engineering and AI/ML. This semester, I am exploring quantum informatics and on creating neural networks for generative AI and computer vision.";
     textContentElem.appendChild(description);
 
     const description2 = document.createElement("p");
@@ -89,11 +89,23 @@ class Home {
     description2.textContent = " I am interested in learning more about applying AI/ML to drive innovation in automation and advanced systems for industries such as US defense, firmware, and enterprise technology. I am eager to contribute my knowledge to complex and large-scale challenges.";
     textContentElem.appendChild(description2);
 
-    this.insertBreak(textContentElem, 5);
+    const description3 = document.createElement("p");
+    description3.classList.add("description");
+    description3.textContent = "Demos of some of my favorite projects can be found on the different \"Project\" tabs on this site.";
+    textContentElem.appendChild(description3);
+
+    this.insertBreak(textContentElem, 2);
 
     const socialLinks = document.createElement("div");
     socialLinks.classList.add("social-links");
     textContentElem.appendChild(socialLinks);
+
+    const email = document.createElement("a");
+    email.classList.add("social-link");
+    email.href = "mailto: nkaldus@gmail.com";
+    email.target = "_blank";
+    email.textContent = "nkaldus@gmail.com";
+    socialLinks.appendChild(email);
 
     const linkedIn = document.createElement("a");
     linkedIn.classList.add("social-link");
