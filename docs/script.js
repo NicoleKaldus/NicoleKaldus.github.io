@@ -1,7 +1,7 @@
 import { HomeView } from "./homeView.js";
 import { RoboticsView } from "./roboticsView.js";
 import { GameDevView } from "./gameDevView.js";
-import { AIMLView } from "./aiml.js";
+import { AIMLView } from "./aimlView.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   /**
