@@ -11,7 +11,7 @@ export class ProjectElement {
    * @param {string} desc - The description for the card.
    * @returns {HTMLDivElement} The card element.
    */
-  render(photoSrc, pageLink, title, desc) {
+  render(photoSrc, href, title, desc) {
     // Create the image element
     const img = document.createElement("img");
     img.src = photoSrc;
@@ -24,7 +24,7 @@ export class ProjectElement {
 
     // Create the title (as a clickable link)
     const titleElem = document.createElement("a");
-    titleElem.href = pageLink;
+    titleElem.href = "#" + href;
     titleElem.textContent = title;
     titleElem.classList.add("card-title");
 
@@ -36,6 +36,11 @@ export class ProjectElement {
     // Append the title and description to the content container
     contentElem.appendChild(titleElem);
     contentElem.appendChild(descElem);
+
+    // this.cardElem.addEventListener('click', function() {
+    //   // Redirect to a new page within the website
+    //   window.location.href = '#' + href; // Replace with your new page URL
+    // });
 
     // Append the image and content to the card element
     this.cardElem.appendChild(img);

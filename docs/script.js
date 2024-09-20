@@ -1,7 +1,8 @@
 import { HomeView } from "./homeView.js";
 import { RoboticsView } from "./roboticsView.js";
 import { GameDevView } from "./gamedevView.js";
-import { AIMLView } from "./aiml.js";
+import { AIMLView } from "./aimlView.js";
+import { SpectrogramView } from "./project_files/spectrogramView.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   /**
@@ -20,6 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
       view = new GameDevView();
     } else if (viewID === "aiml") {
       view = new AIMLView();
+    } else if (viewID === "spectrogram") {
+      console.log("rendering what i want")
+      view = new SpectrogramView();
     } else {
       view = new HomeView();
     }

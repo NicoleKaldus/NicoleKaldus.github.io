@@ -65,7 +65,7 @@ export class GameDevView {
       titleRow.appendChild(pageTitle);
       gameDevContentElem.appendChild(titleRow);
 
-      const elementPropsList = [{src: "../content/game_pic.png", link: "", title: "Basic Image Classification", desc: "My first program using Unity to get used to the game engine. I created a textured 3-D map with barriers and obstacles, and a goal to reach the other side of the map."}
+      const elementPropsList = [{src: "./content/game_pic.png", link: "", title: "Basic Image Classification", desc: "My first program using Unity to get used to the game engine. I created a textured 3-D map with barriers and obstacles, and a goal to reach the other side of the map."}
     ]
 
       elementPropsList.forEach(e => {

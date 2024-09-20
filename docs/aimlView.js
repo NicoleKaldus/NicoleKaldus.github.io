@@ -65,9 +65,9 @@ export class AIMLView {
       titleRow.appendChild(pageTitle);
       AIMLContentElem.appendChild(titleRow);
 
-      const elementPropsList = [{src: "../content/game_pic.png", link: "", title: "Getting Started", desc: "My first program using Unity to get used to the game engine. I created a textured 3-D map with barriers and obstacles, and a goal to reach the other side of the map."},
-      {src: "../content/game_pic.png", link: "", title: "Comparing ML Algorithms for \"Tricky\" Datasets", desc: "My first program using Unity to get used to the game engine. I created a textured 3-D map with barriers and obstacles, and a goal to reach the other side of the map."},
-      {src: "../content/game_pic.png", link: "", title: "PacMan RL", desc: "My first program using Unity to get used to the game engine. I created a textured 3-D map with barriers and obstacles, and a goal to reach the other side of the map."}
+      const elementPropsList = [{src: "./content/CIFAR10.png", link: "", title: "Classifying CIFAR-10 Images", desc: "Classifying CIFAR-10 images from the University of Toronto using a KNN and a two layer Neural network using two types of linear classification strategies."},
+      {src: "./content/tricky_data_pic.jpg", link: "", title: "Comparing ML Algorithms for \"Tricky\" Datasets", desc: "Analyzing differences in efficiency of different machine learning algorithms for large datasets with \'tricky\' datasets (high variance in data, etc). Other group members included Sejal Agarwal."},
+      {src: "./content/PacMan.png", link: "", title: "PacMan RL", desc: "Compares a series of RL algorithms from value iteration to approximate Q-Learning. Pac-Man wins at a rate of over 90%"}
     ]
 
       elementPropsList.forEach(e => {

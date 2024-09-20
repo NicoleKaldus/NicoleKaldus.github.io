@@ -65,15 +65,15 @@ export class RoboticsView {
       titleRow.appendChild(pageTitle);
       roboticsContentElem.appendChild(titleRow);
 
-      const elementPropsList = [{src: "../content/drone_pic.png", link: "", title: "Gesture Controlled Drone Flight", desc: "Drone flight (wired and Bluetooth) controlled by hand-gestures, powered by ML. Tools used included a DJI-Tello Drone, ESP32-S3, and MPU6050. Code was written using both C and Python. Teammates included Austin Copley and Ben Chou."},
-      {src: "../content/spectrogram.png", link: "", title: "Wave Analysis Using Spectrograms", desc: "Analysis of spectrograms with their physical implications to better understand training of neural networks. Types of waves analyzed include audio and gesture. Tools included computer microphone, ESP32-S3, and MPU6050."}]
+      const elementPropsList = [{src: "./content/drone_pic.png", href: "", title: "Gesture Controlled Drone Flight", desc: "Drone flight (wired and Bluetooth) controlled by hand-gestures, powered by ML. Tools used included a DJI-Tello Drone, ESP32-S3, and MPU6050. Code was written using both C and Python. Teammates included Austin Copley and Ben Chou."},
+      {src: "./content/spectrogram.png", href: "spectrogram", title: "Wave Analysis Using Spectrograms", desc: "Analysis of spectrograms with their physical implications to better understand training of neural networks. Types of waves analyzed include audio and gesture. Tools included computer microphone, ESP32-S3, and MPU6050."}]
 
       elementPropsList.forEach(e => {
         const newRow = document.createElement("div");
         newRow.classList.add("row");
         
         const elementMaker = new ProjectElement();
-        const newElement = elementMaker.render(e.src, e.link, e.title, e.desc);
+        const newElement = elementMaker.render(e.src, e.href, e.title, e.desc);
         newElement.classList.add("project-element");
 
         newRow.appendChild(newElement);

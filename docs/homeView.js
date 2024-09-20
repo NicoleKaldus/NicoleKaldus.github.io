@@ -65,7 +65,7 @@ class Home {
 
     // Create and append the profile image
     const img = document.createElement("img");
-    img.src = '../content/self.jpeg';
+    img.src = './content/self.jpeg';
     img.alt = 'Profile Photo';
     img.classList.add('profile-photo');
     homeContentElem.appendChild(img);
